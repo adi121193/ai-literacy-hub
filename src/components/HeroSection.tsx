@@ -26,7 +26,7 @@ const HeroSection = () => {
               <Button variant="hero" size="hero">
                 Book a demo
               </Button>
-              <Button variant="outline" size="hero">
+              <Button variant="hero" size="hero">
                 Book a workshop
               </Button>
               <Button variant="outline" size="hero">
