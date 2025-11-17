@@ -27,7 +27,7 @@ const HeroSection = () => {
                 Book a demo
               </Button>
               <Button variant="outline" size="hero">
-                Explore the platform
+                Book a workshop
               </Button>
             </div>
 
