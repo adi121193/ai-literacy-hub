@@ -30,7 +30,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#" className="text-xl font-semibold text-foreground">
-              AI Literacy OS
+              AI Literacy Labs
             </a>
           </div>
 
