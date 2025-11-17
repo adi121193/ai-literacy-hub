@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -13,20 +11,20 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const navItems = [
-    { label: "Solutions", href: "#solutions" },
-    { label: "Learning", href: "#learning" },
-    { label: "Insights", href: "#insights" },
-    { label: "Resources", href: "#resources" },
-  ];
-
-  return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-border bg-background transition-smooth ${
-        isScrolled ? "h-16 shadow-sm" : "h-18"
-      }`}
-    >
+  const navItems = [{
+    label: "Solutions",
+    href: "#solutions"
+  }, {
+    label: "Learning",
+    href: "#learning"
+  }, {
+    label: "Insights",
+    href: "#insights"
+  }, {
+    label: "Resources",
+    href: "#resources"
+  }];
+  return <nav className={`fixed top-0 left-0 right-0 z-50 border-b border-border bg-background transition-smooth ${isScrolled ? "h-16 shadow-sm" : "h-18"}`}>
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-full items-center justify-between">
           {/* Logo */}
@@ -38,15 +36,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map(item => {})}
           </div>
 
           {/* Desktop CTA */}
@@ -60,29 +50,18 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
+          <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+      {isMobileMenuOpen && <div className="md:hidden border-t border-border bg-background">
           <div className="px-6 py-4 space-y-4">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block text-sm font-medium text-muted-foreground hover:text-foreground"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
+            {navItems.map(item => <a key={item.label} href={item.href} className="block text-sm font-medium text-muted-foreground hover:text-foreground" onClick={() => setIsMobileMenuOpen(false)}>
                 {item.label}
-              </a>
-            ))}
+              </a>)}
             <div className="flex flex-col gap-2 pt-4">
               <Button variant="ghost" size="sm">
                 Log in
@@ -92,10 +71,7 @@ const Navigation = () => {
               </Button>
             </div>
           </div>
-        </div>
-      )}
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navigation;
