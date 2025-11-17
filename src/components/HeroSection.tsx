@@ -29,6 +29,9 @@ const HeroSection = () => {
               <Button variant="outline" size="hero">
                 Book a workshop
               </Button>
+              <Button variant="outline" size="hero">
+                RAI Offerings
+              </Button>
             </div>
 
             <p className="text-sm text-muted-foreground">
