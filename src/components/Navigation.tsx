@@ -30,7 +30,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#" className="text-xl font-semibold text-foreground">
-              AI Literacy Labs
+              AI Literacy OS
             </a>
           </div>
 
@@ -42,7 +42,7 @@ const Navigation = () => {
             <Button variant="ghost" size="sm">
               Log in
             </Button>
-            <Button variant="hero" size="sm" className="bg-purple-700 hover:bg-purple-600">
+            <Button variant="hero" size="sm">
               Book a demo
             </Button>
           </div>
