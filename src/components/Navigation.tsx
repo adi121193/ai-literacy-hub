@@ -36,13 +36,24 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map(item => {})}
+            {navItems.map(item => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth"
+              >
+                {item.label}
+              </a>
+            ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="sm">
               Log in
+            </Button>
+            <Button variant="outline" size="sm">
+              Book a workshop
             </Button>
             <Button variant="hero" size="sm">
               Book a demo
@@ -65,6 +76,9 @@ const Navigation = () => {
             <div className="flex flex-col gap-2 pt-4">
               <Button variant="ghost" size="sm">
                 Log in
+              </Button>
+              <Button variant="outline" size="sm">
+                Book a workshop
               </Button>
               <Button variant="hero" size="sm">
                 Book a demo
