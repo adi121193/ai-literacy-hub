@@ -1,4 +1,5 @@
 import { Target, Users, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const roles = [
   {
@@ -93,6 +94,12 @@ const ForEveryRole = () => {
                         </span>
                       </div>
                     ))}
+                  </div>
+
+                  <div className="pt-4">
+                    <Button variant="hero" size="default" className="w-full">
+                      Book a workshop
+                    </Button>
                   </div>
 
                   <a
