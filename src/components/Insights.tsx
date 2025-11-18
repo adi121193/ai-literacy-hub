@@ -37,7 +37,7 @@ const Insights = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Stay ahead of regulatory changes, emerging risks, and industry best practices. One thoughtful issue per week.
+              Stay ahead of regulatory changes, emerging risks, and industry best practices. One thoughtful issue per week. Also available as a podcast for easy on-the-go digestion of difficult concepts.
             </p>
 
             {/* Email Subscribe */}
@@ -51,6 +51,12 @@ const Insights = () => {
             <p className="text-sm text-muted-foreground">
               No spam. Just one thoughtful issue per week.
             </p>
+
+            <div className="pt-4">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                Explore Research Papers & Market Scan Reports
+              </Button>
+            </div>
           </div>
 
           {/* Right - Recent Issues */}
