@@ -179,9 +179,9 @@ const LiveDemo = () => {
 
             <ul className="space-y-4">
               {[
-                "L1: Everyday 'Can I use this?' questions",
-                "L2: Deeper policy and compliance explanations",
-                "Powered by your internal policies, tools, and frameworks",
+                "Everyday 'Can I use this?' questions",
+                "Deeper policy and compliance explanations",
+                "Powered by your standards and Laws, tools, and frameworks",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
