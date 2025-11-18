@@ -42,23 +42,23 @@ const Insights = () => {
 
             {/* Format Options */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
-              <div className="flex items-start gap-3 p-4 rounded-xl bg-accent/50 border border-border">
+              <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-violet-700">
                 <div className="p-2 rounded-lg bg-background">
-                  <BookOpen className="w-5 h-5 text-primary" />
+                  <BookOpen className="w-5 h-5 text-primary -violet-700" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">Newsletter</h4>
-                  <p className="text-sm text-muted-foreground">Weekly digest in your inbox</p>
+                  <h4 className="font-medium mb-1 text-slate-50">Newsletter</h4>
+                  <p className="text-sm text-slate-50">Weekly digest in your inbox</p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-3 p-4 rounded-xl bg-accent/50 border border-border">
+              <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-violet-700">
                 <div className="p-2 rounded-lg bg-background">
                   <Podcast className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">Podcast</h4>
-                  <p className="text-sm text-muted-foreground">Listen on-the-go</p>
+                  <h4 className="font-medium mb-1 text-slate-50">Podcast</h4>
+                  <p className="text-sm text-slate-50">Listen on-the-go</p>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Insights = () => {
             {/* Email Subscribe */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Input type="email" placeholder="you@company.com" className="flex-1" />
-              <Button variant="hero" size="lg">
+              <Button variant="hero" size="lg" className="text-purple-700 bg-slate-50">
                 Subscribe Free
               </Button>
             </div>
