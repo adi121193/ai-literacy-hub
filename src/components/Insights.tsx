@@ -106,7 +106,7 @@ const Insights = () => {
         <div className="space-y-8 pt-12 border-t border-border">
           <div className="text-center space-y-4">
             <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
-              Free research for deeper understanding
+              Research for deeper understanding
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Use our papers to build internal AI literacy and governance frameworks.
