@@ -53,7 +53,7 @@ const Insights = () => {
             </p>
 
             <div className="pt-4">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto text-purple-700">
                 Explore Research Papers & Market Scan Reports
               </Button>
             </div>
