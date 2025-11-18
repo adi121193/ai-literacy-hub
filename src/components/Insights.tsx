@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FileText, Download, ExternalLink } from "lucide-react";
+import { FileText, Download, ExternalLink, Podcast, BookOpen } from "lucide-react";
 const recentIssues = [{
   title: "EU AI Act enforcement timeline – what changes in 2026",
   date: "Nov 10, 2025",
@@ -29,7 +29,7 @@ const Insights = () => {
           {/* Left - Newsletter Pitch */}
           <div className="space-y-6">
             <div className="inline-block">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">​Stay Ahead</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">Stay Ahead</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
@@ -37,24 +37,48 @@ const Insights = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Stay ahead of regulatory changes, emerging risks, and industry best practices. One thoughtful issue per week. Also available as a podcast for easy on-the-go digestion of difficult concepts.
+              Stay ahead of regulatory changes, emerging risks, and industry best practices. One thoughtful issue per week.
             </p>
 
+            {/* Format Options */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
+              <div className="flex items-start gap-3 p-4 rounded-xl bg-accent/50 border border-border">
+                <div className="p-2 rounded-lg bg-background">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-1">Newsletter</h4>
+                  <p className="text-sm text-muted-foreground">Weekly digest in your inbox</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 rounded-xl bg-accent/50 border border-border">
+                <div className="p-2 rounded-lg bg-background">
+                  <Podcast className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-1">Podcast</h4>
+                  <p className="text-sm text-muted-foreground">Listen on-the-go</p>
+                </div>
+              </div>
+            </div>
+
             {/* Email Subscribe */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Input type="email" placeholder="you@company.com" className="flex-1" />
               <Button variant="hero" size="lg">
-                Subscribe free
+                Subscribe Free
               </Button>
             </div>
 
             <p className="text-sm text-muted-foreground">
-              No spam. Just one thoughtful issue per week.
+              No spam. Unsubscribe anytime.
             </p>
 
-            <div className="pt-4">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto text-purple-700">
-                Explore Research Papers & Market Scan Reports
+            <div className="pt-4 border-t border-border">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <FileText className="w-4 h-4 mr-2" />
+                Explore Research Papers & Reports
               </Button>
             </div>
           </div>
