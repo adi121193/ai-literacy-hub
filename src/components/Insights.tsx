@@ -32,9 +32,8 @@ const Insights = () => {
               <span className="text-xs font-semibold uppercase tracking-wider text-primary">Stay Ahead</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
-              Weekly AI Governance & Market Scan
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-foreground">AI Governance Research & 
+Market Scan</h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
               Stay ahead of regulatory changes, emerging risks, and industry best practices. One thoughtful issue per week.
