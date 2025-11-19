@@ -221,11 +221,11 @@ const Suite = () => {
                   </li>
                 </ul>
                 <div className="flex gap-3 pt-4">
-                  <Button variant="outline">
+                  <Button variant="outline" className="bg-purple-700 hover:bg-purple-600 text-violet-600">
                     <Github className="w-4 h-4" />
                     View GitHub
                   </Button>
-                  <Button variant="link" className="gap-1">
+                  <Button variant="link" className="gap-1 text-violet-600">
                     How to integrate
                     <ArrowRight className="w-4 h-4" />
                   </Button>
