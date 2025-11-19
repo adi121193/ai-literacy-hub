@@ -29,7 +29,7 @@ const Insights = () => {
           {/* Left - Newsletter Pitch */}
           <div className="space-y-6">
             <div className="inline-block">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">Stay Ahead</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-violet-700">Stay Ahead</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground">AI Governance Research & 

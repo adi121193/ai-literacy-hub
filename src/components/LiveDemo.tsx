@@ -1,10 +1,8 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-
 const LiveDemo = () => {
-  return (
-    <section id="assist" className="py-20 md:py-32 bg-soft-gray">
+  return <section id="assist" className="py-20 md:py-32 bg-soft-gray">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Chat Mockup with Tabs */}
@@ -65,10 +63,7 @@ const LiveDemo = () => {
                         </li>
                       </ul>
                       <div className="pt-2">
-                        <a
-                          href="#"
-                          className="inline-flex items-center text-xs font-medium text-primary hover:underline"
-                        >
+                        <a href="#" className="inline-flex items-center text-xs font-medium text-primary hover:underline">
                           View ISO 42001 Section 7.2 →
                         </a>
                       </div>
@@ -108,10 +103,7 @@ const LiveDemo = () => {
                         </li>
                       </ul>
                       <div className="pt-2">
-                        <a
-                          href="#"
-                          className="inline-flex items-center text-xs font-medium text-primary hover:underline"
-                        >
+                        <a href="#" className="inline-flex items-center text-xs font-medium text-primary hover:underline">
                           View EU AI Act Article 6 →
                         </a>
                       </div>
@@ -151,10 +143,7 @@ const LiveDemo = () => {
                         </li>
                       </ul>
                       <div className="pt-2">
-                        <a
-                          href="#"
-                          className="inline-flex items-center text-xs font-medium text-primary hover:underline"
-                        >
+                        <a href="#" className="inline-flex items-center text-xs font-medium text-primary hover:underline">
                           View Risk Assessment Matrix →
                         </a>
                       </div>
@@ -168,7 +157,7 @@ const LiveDemo = () => {
           {/* Right - Value Bullets */}
           <div className="order-1 lg:order-2 space-y-6">
             <div className="inline-block">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+              <span className="text-xs font-semibold uppercase tracking-wider text-violet-700">
                 Assist
               </span>
             </div>
@@ -178,16 +167,10 @@ const LiveDemo = () => {
             </h3>
 
             <ul className="space-y-4">
-              {[
-                "Everyday 'Can I use this?' questions",
-                "Deeper policy and compliance explanations",
-                "Powered by your standards and Laws, tools, and frameworks",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {["Everyday 'Can I use this?' questions", "Deeper policy and compliance explanations", "Powered by your standards and Laws, tools, and frameworks"].map((item, index) => <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                   <span className="text-muted-foreground">{item}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
 
             <div className="pt-4">
@@ -198,8 +181,6 @@ const LiveDemo = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LiveDemo;
