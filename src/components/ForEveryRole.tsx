@@ -54,6 +54,9 @@ const ForEveryRole = () => {
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
+          <div className="inline-block">
+            <span className="text-xs font-semibold uppercase tracking-wider text-primary">Educate</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-semibold text-foreground">
             Designed for every role
           </h2>
