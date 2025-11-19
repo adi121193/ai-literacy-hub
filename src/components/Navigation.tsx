@@ -42,7 +42,7 @@ const Navigation = () => {
             <Button variant="ghost" size="sm">
               Log in
             </Button>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="bg-violet-700 hover:bg-violet-600">
               Book a demo
             </Button>
           </div>

@@ -3,10 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check, Github, ArrowRight } from "lucide-react";
-
 const Suite = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       <main>
         {/* Hero Section */}
@@ -15,13 +13,13 @@ const Suite = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="space-y-8">
                 <div className="inline-block">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-violet-700">
                     Responsible AI Suite
                   </span>
                 </div>
 
                 <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">
-                  Your complete Responsible AI toolkit.
+                  Your complete Responsible AI suite.
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
@@ -29,26 +27,21 @@ const Suite = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="hero">
+                  <Button variant="hero" size="hero" className="bg-purple-700 hover:bg-purple-600">
                     Book a suite demo
                   </Button>
-                  <Button variant="outline" size="hero" className="rounded-full">
-                    <Github className="w-4 h-4" />
-                    View GitHub Toolkit
-                  </Button>
+                  
                 </div>
               </div>
 
               {/* Visual placeholder */}
               <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20 p-12 aspect-square flex items-center justify-center">
+                <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20 p-12 aspect-square flex items-center justify-center bg-purple-200">
                   <div className="text-center space-y-4">
                     <div className="grid grid-cols-2 gap-6">
-                      {["Toolkit", "Red Teaming", "Agent Framework", "Compliance Analyzer"].map((item) => (
-                        <div key={item} className="bg-background/80 backdrop-blur-sm rounded-lg p-4 text-sm font-medium">
+                      {["Toolkit", "Red Teaming", "Agent Framework", "Compliance Analyzer"].map(item => <div key={item} className="bg-background/80 backdrop-blur-sm rounded-lg p-4 text-sm font-medium">
                           {item}
-                        </div>
-                      ))}
+                        </div>)}
                     </div>
                   </div>
                 </div>
@@ -58,7 +51,7 @@ const Suite = () => {
         </section>
 
         {/* Offerings at a glance */}
-        <section className="py-20 md:py-32 bg-muted/30">
+        <section className="py-20 md:py-32 bg-violet-100">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-foreground mb-4">
@@ -94,11 +87,11 @@ const Suite = () => {
                   <span className="font-medium text-foreground">Ideal for:</span> Eng & RAI teams
                 </p>
                 <div className="flex gap-3 pt-4">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" className="text-violet-700">
                     <Github className="w-4 h-4" />
                     View on GitHub
                   </Button>
-                  <Button size="sm">Book a demo</Button>
+                  <Button size="sm" className="bg-violet-600 hover:bg-violet-500">Book a demo</Button>
                 </div>
               </Card>
 
@@ -126,7 +119,7 @@ const Suite = () => {
                   <span className="font-medium text-foreground">Ideal for:</span> High-risk / regulated systems
                 </p>
                 <div className="pt-4">
-                  <Button size="sm" className="w-full sm:w-auto">Book a red teaming session</Button>
+                  <Button size="sm" className="w-full sm:w-auto bg-violet-600 hover:bg-violet-500">Book a red teaming session</Button>
                 </div>
               </Card>
 
@@ -158,7 +151,7 @@ const Suite = () => {
                   <span className="font-medium text-foreground">Ideal for:</span> Agentic workflows teams
                 </p>
                 <div className="pt-4">
-                  <Button size="sm">Book a demo</Button>
+                  <Button size="sm" className="bg-violet-700 hover:bg-violet-600">Book a demo</Button>
                 </div>
               </Card>
 
@@ -186,7 +179,7 @@ const Suite = () => {
                   <span className="font-medium text-foreground">Ideal for:</span> Legal, DPO, Risk, Governance
                 </p>
                 <div className="pt-4">
-                  <Button size="sm">Explore Compliance Analyzer</Button>
+                  <Button size="sm" className="bg-violet-700 hover:bg-violet-600">Explore Compliance Analyzer</Button>
                 </div>
               </Card>
             </div>
@@ -198,7 +191,7 @@ const Suite = () => {
         <section className="py-20 md:py-32 bg-background">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-12 aspect-square flex items-center justify-center">
+              <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-12 aspect-square flex items-center justify-center bg-violet-100">
                 <div className="text-sm font-mono text-muted-foreground space-y-2">
                   <div>$ rai-toolkit audit</div>
                   <div className="text-primary">✓ Checking bias metrics...</div>
@@ -268,16 +261,26 @@ const Suite = () => {
                   </li>
                 </ul>
                 <div className="pt-4">
-                  <Button>Book a red teaming call</Button>
+                  <Button className="bg-purple-700 hover:bg-purple-600">Book a red teaming call</Button>
                 </div>
               </div>
               <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-destructive/10 to-orange-500/10 p-12 aspect-square flex items-center justify-center order-1 lg:order-2">
                 <div className="w-full space-y-2">
-                  <div className="h-8 bg-destructive/80 rounded" style={{ width: '90%' }}></div>
-                  <div className="h-8 bg-destructive/60 rounded" style={{ width: '75%' }}></div>
-                  <div className="h-8 bg-orange-500/60 rounded" style={{ width: '65%' }}></div>
-                  <div className="h-8 bg-yellow-500/60 rounded" style={{ width: '45%' }}></div>
-                  <div className="h-8 bg-green-500/60 rounded" style={{ width: '30%' }}></div>
+                  <div className="h-8 bg-destructive/80 rounded" style={{
+                  width: '90%'
+                }}></div>
+                  <div className="h-8 bg-destructive/60 rounded" style={{
+                  width: '75%'
+                }}></div>
+                  <div className="h-8 bg-orange-500/60 rounded" style={{
+                  width: '65%'
+                }}></div>
+                  <div className="h-8 bg-yellow-500/60 rounded" style={{
+                  width: '45%'
+                }}></div>
+                  <div className="h-8 bg-green-500/60 rounded" style={{
+                  width: '30%'
+                }}></div>
                 </div>
               </div>
             </div>
@@ -319,7 +322,7 @@ const Suite = () => {
                   </li>
                 </ul>
                 <div className="pt-4">
-                  <Button>Talk about agent frameworks</Button>
+                  <Button className="bg-violet-600 hover:bg-violet-500">Talk about agent frameworks</Button>
                 </div>
               </div>
             </div>
@@ -327,8 +330,6 @@ const Suite = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Suite;
