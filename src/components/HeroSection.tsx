@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroDashboard from "@/assets/hero-dashboard.png";
 const HeroSection = () => {
   return <section className="relative overflow-hidden bg-background pt-32 pb-20 md:pt-40 md:pb-32">
@@ -19,10 +20,10 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="hero" className="bg-purple-700 hover:bg-purple-600">
-                Book a demo
+              <Button variant="hero" size="hero" asChild>
+                <Link to="/suite">Book a demo</Link>
               </Button>
-              <Button variant="hero" size="hero" className="bg-purple-700 hover:bg-purple-600">
+              <Button variant="hero" size="hero">
                 Book a workshop
               </Button>
             </div>
