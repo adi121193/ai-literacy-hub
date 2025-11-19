@@ -12,9 +12,7 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">
-              Raise your organization's AI IQ
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground text-balance leading-tight">Raise your organization's Ethical AI IQ</h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
               Chatbots, courses, and insights that make AI safe, compliant, and usable for everyone — from leaders to engineers.
