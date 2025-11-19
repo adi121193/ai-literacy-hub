@@ -7,7 +7,7 @@ const HeroSection = () => {
           {/* Left Column - Text */}
           <div className="space-y-8">
             <div className="inline-block">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+              <span className="text-xs font-semibold uppercase tracking-wider text-purple-700">
                 AI Literacy & Governance Platform
               </span>
             </div>
@@ -21,7 +21,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="hero">
+              <Button variant="hero" size="hero" className="bg-purple-700 hover:bg-purple-600">
                 Book a demo
               </Button>
               <Button variant="hero" size="hero" className="bg-purple-700 hover:bg-purple-600">
