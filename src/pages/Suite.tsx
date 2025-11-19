@@ -221,7 +221,7 @@ const Suite = () => {
                   </li>
                 </ul>
                 <div className="flex gap-3 pt-4">
-                  <Button variant="outline" className="bg-purple-700 hover:bg-purple-600 text-violet-600">
+                  <Button variant="outline" className="bg-purple-700 hover:bg-purple-600 text-slate-50">
                     <Github className="w-4 h-4" />
                     View GitHub
                   </Button>
